@@ -1,4 +1,3 @@
-# ProjectTemplate
 # goodreadsbookshelf
 ## GoodRead My Books Page
 
