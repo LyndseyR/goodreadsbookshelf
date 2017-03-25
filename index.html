@@ -3,17 +3,195 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Template</title>
+    <title>My Books</title>
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <script src="https://use.fontawesome.com/f2bdd0ae67.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
+    <header>
+      <div class="mobile-nav">
+        <button class="hamburger">&#9776;</button>
+          <ul class="hamburger-menu">
+            <li><a class="selected" href="#">My Books</a></li>
+            <li><a href="#">Browse</a></li>
+            <li><a href="#">Recommendations</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">News &amp; Interviews</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Quotes</a></li>
+            <li><a href="#">Trivia</a></li>
+          </ul>
+          <img src="images/goodreads-logo.gif" alt="GoodReads Logo">
+          <img src = "images/search-icon.gif" id="search-icon" alt="Search">
+      </div>
 
+      <div class="desktop-header">
+        <ul>
+          <li><img src="images/goodreads-logo.gif" alt="GoodReads Home"></li>
+          <li><a class="selected" href="#">My Books</a></li>
+          <li><a href="#">Browse</a>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Choice Awards</a></li>
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Giveaways</a></li>
+              <li><a href="#">Lists</a></li>
+              <li><a href="#">New Releases</a></li>
+              <li><a href="#">News and Interviews</a></li>
+              <li><a href="#">Recommendations</a></li>
+            </ul>
+           </li>
+          <li><a href="#">Community</a>
+            <ul>
+              <li><a href="#">Ask the Author</a></li>
+              <li><a href="#">Creative Writing</a></li>
+              <li><a href="#">Discussions</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Groups</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="#">Quotes</a></li>
+              <li><a href="#">Trivia</a></li>
+            </ul>
+          </li>
+        </ul>
 
+        <ul class="desktop-nav-right">
+          <input type="text" id="search" placeholder="Search"></input>
+          <img src="images/lyndsey.jpg" alt="Your Account" class="account">
+        </ul>
+      </div>
+    </header>
+
+    <section class="reading-content clearfix">
+
+      <div class="side-reading">
+        <h3>Friends Recently Review</h3>
+
+        <!-- Gone Girl -->
+        <div class="friend-review clearfix">
+          <img src="images/gone-girl.jpg" alt="Gone Girl">
+          <div class="friend-review-content">
+            <h3>Kiah Reviewed</h3>
+            <h5>By Flynn, Gillan</h5>
+            <h5>Avg Rating 4.02</h5>
+            <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+            <button><p>Add to Shelf</p></button>
+          </div>
+        </div>
+
+        <!-- Angles and Demons -->
+        <div class="friend-review clearfix">
+          <img src="images/angles-demons.jpg" alt="Angles and Demons">
+          <div class="friend-review-content">
+            <h3>Sam Reviewed</h3>
+            <h5>By Brown, Dan</h5>
+            <h5>Avg Rating 3.85</h5>
+            <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+            <button><p>Add to Shelf</p></button>
+          </div>
+        </div>
+
+        <!-- The Silkworm  -->
+        <div class="friend-review clearfix">
+          <img src="images/silkworm.jpg" alt="The Silkworm">
+          <div class="friend-review-content">
+            <h3>Jack Reviewed</h3>
+            <h5>By Galbraith, Robert</h5>
+            <h5>Avg Rating 4.03</h5>
+            <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+            <button><p>Add to Shelf</p></button>
+          </div>
+        </div>
+
+        <!-- Humans of New York -->
+        <!-- <div class="friend-review clearfix">
+          <img src="images/humans-of-NY.jpg" alt="Humans of New York">
+          <div class="friend-review-content">
+            <h3>Jack Reviewed</h3>
+            <h5>By Stanton, Brandon</h5>
+            <h5>Avg Rating 4.49</h5>
+            <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+            <button><p>Add to Shelf</p></button>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Main Reading Body content -->
+
+      <div class="main-reading">
+        <div class="main-reading-nav">
+          <h3 class="read">All Read</h3><h3>Currently Reading</h3><h3>To Read</h3>
+        </div>
+        <section class="books clearfix">
+          <script id="book-example" type="text/x-handlebars-template">
+            {{#each books}}
+              <article>
+                <img src="images/{{cover}}.jpg" alt="{{title}}">
+                <h4>By: {{author}}</h4>
+                <h5>Avg Rating: {{rating}}</h5>
+                <img class="stars" src="images/{{stars}}.png">
+              </article>
+            {{/each}}
+          </script>
+        </section>
+
+        </div>
+    </section>
+
+    <footer class="clearfix">
+      <ul>
+        <li><h2>Tools</h2></li>
+        <li><a href="#">Add Amazon Book Purchases</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Find Duplicates</a></li>
+        <li><a href="#">Import/Export</a></li>
+        <li><a href="#">Most Read Authors</a></li>
+        <li><a href="#">Recommendations</a></li>
+        <li><a href="#">Shelf Cloud</a></li>
+        <li><a href="#">Stats</a></li>
+        <li><a href="#">Widgets</a></li>
+      </ul>
+      <ul>
+        <li><h2>Browse</h2></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Choice Awards</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">New Releases</a></li>
+        <li><a href="#">News &amp; Interviews</a></li>
+      </ul>
+      <ul>
+        <li><h2>Community</h2></li>
+        <li><a href="#">Ask the Author</a></li>
+        <li><a href="#">Discussions</a></li>
+        <li><a href="#">Find a Friend</a></li>
+        <li><a href="#">Groups</a></li>
+        <li><a href="#">Trivia/Quizzes</a></li>
+      </ul>
+      <ul class="footer-nav-right">
+        <li><h2>GoodReads</h2></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Advertisers</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Librarian</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+
     <script src="js/script.js"></script>
   </body>
 </html>

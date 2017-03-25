@@ -1,0 +1,175 @@
+@import "partials/variables";
+@import "partials/navigation";
+
+h1, h2, h3, h4, h5, h6, ul, a, p {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  font-size:14px;
+  font-family: 'Helvetica', sans-serif;
+  background-color:$secondary;
+  color: #333;
+  // font-family: 'Arimo', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Patua One', cursive;
+}
+
+h3 {
+  display: inline-block;
+  color: $primary;
+  padding-right: 20px;
+  font-size:1rem;
+}
+
+h4 {
+  font-size: .85rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size:.8rem;
+  font-weight:300;
+}
+
+a {
+  text-decoration: none;
+  // font-family: 'Patua One', cursive;
+}
+li {
+  list-style-type: none;
+}
+
+//////////////////////////////////////
+// Side-Reading Content///////////////
+//////////////////////////////////////
+
+.side-reading {
+  border:2px solid $primary;
+  background-color: $secondary;
+  float: left;
+  width:23%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 5% 3% 3% 3%;
+}
+.friend-review {
+  border-bottom: 1px solid $primary;
+  padding-bottom: 10px;
+  margin: 5% auto;
+  h3 {
+    padding: 0 0 5px;
+  }
+  img {
+    height: 120px;
+    width:35%;
+    border:1px solid #333;
+    float: left;
+    object-fit: cover;
+  }
+  button {
+    background:$primary;
+    padding: 5px;
+    border:none;
+    display: block;
+    margin:0 auto;
+    p {
+      text-transform: uppercase;
+      color: $accent;
+      font-size: .8rem;
+    }
+  }
+}
+
+.friend-review-content{
+  float: left;
+  width: 60;
+  margin-left: 3%;
+  text-align: center;
+}
+
+.fa-star {
+  color: $primary;
+  padding: 8px 0;
+  font-size: 1.2rem;
+}
+
+
+
+//////////////////////////////////////
+// Reading Content////////////////////
+//////////////////////////////////////
+
+.reading-content {
+  background:$accent;
+  width:90%;
+  margin:0 auto;
+  margin-top:25px;
+  padding: 10px;
+}
+
+.main-reading {
+  float: left;
+  width:70%;
+  box-sizing: border-box;
+  padding-left:1%;
+
+  .books article {
+    margin: 4% 3% 1% 0;
+    border: 1px solid $primary;
+    text-align: center;
+    float: left;
+    width: 21%;
+
+    img:nth-child(1) {
+      width: 100%;
+      height:200px;
+      object-fit: cover;
+    }
+    .stars {
+      height:20px;
+      object-fit: contain;
+      padding-bottom:5px;
+    }
+  }
+}
+
+//////////////////////////////////////
+// Footer ///////////////////////////
+//////////////////////////////////////
+footer {
+  width: 70%;
+  margin: 3% auto;
+  ul {
+    float: left;
+    width: 21%;
+    margin:1% 2%;
+    li a {
+      line-height: 1.6;
+      color: #333;
+    }
+    li a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.footer-nav-right {
+  float: right;
+  text-align: right;
+}
+
+// Clearfix
+.clearfix::after {
+  content:"";
+  clear:both;
+  display:block;
+}
+
+@import "partials/media";

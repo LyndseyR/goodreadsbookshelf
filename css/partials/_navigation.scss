@@ -1,0 +1,118 @@
+// Navigation///////////////
+////////////////////////////
+
+// Desktop
+
+
+// Mobile
+.mobile-nav {
+  padding:10px 25px;
+  height:30px;
+  background: $secondary;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  opacity: 0;//-->REMOVE in Media Queries
+  width: 100%;
+
+  img {
+    height:50px;
+  }
+}
+#search-icon {
+  height:40px;
+}
+ .hamburger {
+    position: relative;
+    border:none;
+    background-color:transparent;
+    color:#333;
+ }
+ .hamburger:focus{
+    outline:0;
+ }
+ .hamburger-menu {
+  display: none;
+  position:absolute;
+  left:0px;
+  top:50px;
+  text-align:left;
+  li {
+    a {
+      color:$accent;
+      padding:10px 10px 10px 50px;
+      background-color:rgba(73, 40, 47,.9);
+      display: inline-block;
+      width:300px;
+      border-bottom:1px solid $accent;
+    }
+    a:focus, .selected {
+      background-color:rgba(73, 40, 47,1);
+    }
+  }
+}
+
+////////////////////////////
+// Desktop//////////////////
+////////////////////////////
+
+.desktop-header {
+  height:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:10px 50px;
+
+  img {
+    height:50px;
+    position: relative;
+    top:20px;
+    padding:0 10px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-stlye: none;
+
+    li{
+      display: inline-block;
+      position: relative;
+      // width: 150px;
+
+      a {
+        display: block;
+        background-color: rgba(73, 40, 47, .9);
+        color: $accent;
+        padding:10px 20px;
+      }
+
+      a:hover, .selected {
+        background-color:$primary;
+        transition: all .4s ease-in-out;
+      }
+
+      ul{
+         position: absolute;
+         display: none;
+
+         li a {
+           width: 161px;
+         }
+      }
+
+      &:hover ul{
+          display: block;
+      }
+    }
+  }
+}
+
+.account {
+  height:50px;
+  width:50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
