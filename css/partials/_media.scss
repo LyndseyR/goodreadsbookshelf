@@ -74,6 +74,9 @@
     margin:50px auto 40px;
   }
   .main-reading {
+    .main-reading-nav {
+      text-align: center;
+     }
      .books, .current-books, .to-read-books {
         article {
         width: 35%;
@@ -81,18 +84,23 @@
       }
     }
   }
-  .main-reading-nav{
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 500px) {
 
+  .main-reading-nav {
+    button {
+      padding: 5px 2px 5px 0;
+      font-size: .9rem;
+      margin-bottom: 10px;
+    }
+  }
+
   .main-reading {
     .books, .current-books, .to-read-books {
       article {
-      width: 40%;
-      margin: 2% 4%;
+      width: 45%;
+      margin: 2%;
       }
     }
   }

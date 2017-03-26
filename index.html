@@ -112,27 +112,27 @@
         </div>
 
         <!-- Humans of New York -->
-        <!-- <div class="friend-review clearfix">
+        <div class="friend-review clearfix">
           <img src="images/humans-of-NY.jpg" alt="Humans of New York">
           <div class="friend-review-content">
-            <h3>Jack Reviewed</h3>
+            <h3>Tom Reviewed</h3>
             <h5>By Stanton, Brandon</h5>
             <h5>Avg Rating 4.49</h5>
             <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
             <button><p>Add to Shelf</p></button>
           </div>
-        </div> -->
+        </div>
       </div>
 
       <!-- Main Reading Body content -->
 
       <div class="main-reading">
         <div class="main-reading-nav">
-          <h3 class="read">All Read</h3><h3 class="currently">Currently Reading</h3><h3 class="to-read">To Read</h3>
+          <h3><button class="read"> Read</button></h3><h3><button class="currently">Currently Reading</button></h3><h3><button class="to-read">To Read</button></h3>
         </div>
         <section class="books">
           <!-- All Read Section -->
-          <script id="book-example" type="text/x-handlebars-template">
+          <script id="read" type="text/x-handlebars-template">
             {{#each books}}
               <article>
                 <img src="images/{{cover}}.jpg" alt="{{title}}">

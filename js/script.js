@@ -13,10 +13,10 @@ $(document).ready(function(){
 // Main Reading Read////
 /////////////////////////
 
-// All Read
+// Read Books Section
 
 $(function () {
-  var source = $("#book-example").html();
+  var source = $("#read").html();
   var template = Handlebars.compile(source);
 
   var context = {
@@ -28,7 +28,7 @@ $(function () {
       stars: 'star5',
     },{
       title: 'When Christ and His Saints Slept',
-      author: 'Steinback, John',
+      author: 'Penman, Sharon',
       cover: 'christ-saints-slept',
       rating: '4.24',
       stars: 'star5',
@@ -82,17 +82,17 @@ $(function () {
 
   var context = {
     books: [{
-      title: 'Harry Potter',
-      author: 'Rowling, JK',
-      cover: 'casual-vacancy',
-      rating: '4.74',
-      stars: 'star5',
+      title: 'Les Miserables',
+      author: 'Hugo Victor',
+      cover: 'les-miserables',
+      rating: '4.14',
+      stars: 'rate',
     },{
-      title: 'The Cuckoos Calling',
-      author: 'Galbraith, Robert',
-      cover: 'career-of-evil',
-      rating: '3.83',
-      stars: 'star3',
+      title: 'Calvin and Hobbes',
+      author: 'Watterson, Bill',
+      cover: 'calvin-hobbes',
+      rating: '4.61',
+      stars: 'rate',
     }]
   };
   var compiled = template(context);
@@ -107,17 +107,29 @@ $(function () {
 
   var context = {
     books: [{
-      title: 'Harry Potter',
-      author: 'Rowling, JK',
-      cover: 'lightening-thief',
-      rating: '4.74',
-      stars: 'star5',
+      title: 'Adulthood is a Myth',
+      author: 'Andersen, Sarah',
+      cover: 'adulthood',
+      rating: '4.13',
+      stars: 'rate',
     },{
-      title: 'The Cuckoos Calling',
-      author: 'Galbraith, Robert',
-      cover: 'angles-demons',
-      rating: '3.83',
-      stars: 'star3',
+      title: 'The Power of One',
+      author: 'Courtenay, Bryce',
+      cover: 'power-one',
+      rating: '4.34',
+      stars: 'rate',
+    },{
+      title: 'Rumors of War',
+      author: 'Hughes, Dean',
+      cover: 'rumors-war',
+      rating: '4.25',
+      stars: 'rate',
+    },{
+      title: 'Hamilton',
+      author: 'Miranda, Manuel',
+      cover: 'hamilton',
+      rating: '4.45',
+      stars: 'rate',
     }]
   };
   var compiled = template(context);

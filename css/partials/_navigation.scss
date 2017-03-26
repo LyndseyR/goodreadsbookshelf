@@ -27,11 +27,11 @@
  .hamburger {
     position: relative;
     border:none;
-    background-color:transparent;
-    color:#333;
- }
- .hamburger:focus{
+    background-color:$accent;
+    color:$primary;
     outline:0;
+    border-radius: 4px;
+    padding: 3px 6px;
  }
  .hamburger-menu {
   display: none;
@@ -45,7 +45,7 @@
       padding:10px 10px 10px 30px;
       background-color:rgba(73, 40, 47,.9);
       display: inline-block;
-      width:300px;
+      width:100vw;
       border-bottom:1px solid $accent;
     }
     a:focus, .selected {
@@ -115,4 +115,10 @@
   width:50px;
   object-fit: cover;
   border-radius: 50%;
+  object-position: 100% 0%;
+}
+
+.desktop-header input {
+  padding: 5px;
+  outline-color: $accent;
 }

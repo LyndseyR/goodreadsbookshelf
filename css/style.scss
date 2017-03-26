@@ -43,8 +43,13 @@ a {
   text-decoration: none;
   // font-family: 'Patua One', cursive;
 }
+
 li {
   list-style-type: none;
+}
+
+button {
+  outline:none;
 }
 
 //////////////////////////////////////
@@ -80,12 +85,17 @@ li {
     border:none;
     display: block;
     margin:0 auto;
+    box-shadow: 1px 2px 5px #333;
     p {
       text-transform: uppercase;
       color: $accent;
       font-size: .8rem;
     }
   }
+}
+.friend-review:nth-of-type(4) {
+  border-bottom: none;
+  padding-bottom: 5px;
 }
 
 .friend-review-content{
@@ -106,6 +116,20 @@ li {
 //////////////////////////////////////
 // Reading Content////////////////////
 //////////////////////////////////////
+.main-reading-nav {
+  button {
+    padding: 5px 5px 5px 0;
+    border:none;
+    color: $primary;
+    font-weight: 800;
+    border-bottom: 3px solid transparent;
+    background: transparent;
+  }
+  button:hover {
+    border-bottom: 3px solid $primary;
+  }
+}
+
 .current-books, .to-read-books {
   display:none;
 }
