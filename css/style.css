@@ -1,5 +1,5 @@
 .mobile-nav {
-  padding: 10px 25px;
+  padding: 10px 0;
   height: 30px;
   background: #d3e0cd;
   display: flex;
@@ -32,7 +32,7 @@
   text-align: left; }
   .hamburger-menu li a {
     color: #f4f1ea;
-    padding: 10px 10px 10px 50px;
+    padding: 10px 10px 10px 30px;
     background-color: rgba(73, 40, 47, 0.9);
     display: inline-block;
     width: 300px;
@@ -160,6 +160,9 @@ li {
   padding: 8px 0;
   font-size: 1.2rem; }
 
+.current-books, .to-read-books {
+  display: none; }
+
 .reading-content {
   background: #f4f1ea;
   width: 90%;
@@ -172,20 +175,22 @@ li {
   width: 70%;
   box-sizing: border-box;
   padding-left: 1%; }
-  .main-reading .books article {
-    margin: 4% 3% 1% 0;
-    border: 1px solid #49282f;
-    text-align: center;
-    float: left;
-    width: 21%; }
-    .main-reading .books article img:nth-child(1) {
-      width: 100%;
-      height: 200px;
-      object-fit: cover; }
-    .main-reading .books article .stars {
-      height: 20px;
-      object-fit: contain;
-      padding-bottom: 5px; }
+  .main-reading .books, .main-reading .current-books, .main-reading .to-read-books {
+    overflow: hidden; }
+    .main-reading .books article, .main-reading .current-books article, .main-reading .to-read-books article {
+      margin: 4% 3% 1% 0;
+      border: 1px solid #49282f;
+      text-align: center;
+      float: left;
+      width: 21%; }
+      .main-reading .books article img:nth-child(1), .main-reading .current-books article img:nth-child(1), .main-reading .to-read-books article img:nth-child(1) {
+        width: 100%;
+        height: 200px;
+        object-fit: cover; }
+      .main-reading .books article .stars, .main-reading .current-books article .stars, .main-reading .to-read-books article .stars {
+        height: 20px;
+        object-fit: contain;
+        padding-bottom: 5px; }
 
 footer {
   width: 70%;
@@ -218,7 +223,7 @@ footer {
 
   .main-reading {
     width: 64%; }
-    .main-reading .books article {
+    .main-reading .books article, .main-reading .current-books article, .main-reading .to-read-books article {
       width: 40%;
       margin-right: 8%; }
 
@@ -246,7 +251,7 @@ footer {
 
   .main-reading {
     width: 100%; }
-    .main-reading .books article {
+    .main-reading .books article, .main-reading .current-books article, .main-reading .to-read-books article {
       width: 27%;
       margin-right: 6%; } }
 @media screen and (max-width: 668px) {
@@ -254,17 +259,17 @@ footer {
     display: none; }
 
   .reading-content {
-    margin: 50px auto; }
+    margin: 50px auto 40px; }
 
-  .main-reading .books article {
+  .main-reading .books article, .main-reading .current-books article, .main-reading .to-read-books article {
     width: 35%;
     margin: 2% 6%; }
 
   .main-reading-nav {
     text-align: center; } }
 @media screen and (max-width: 500px) {
-  .main-reading .books article {
+  .main-reading .books article, .main-reading .current-books article, .main-reading .to-read-books article {
     width: 40%;
-    margin: 3%; } }
+    margin: 2% 4%; } }
 
 /*# sourceMappingURL=style.css.map */

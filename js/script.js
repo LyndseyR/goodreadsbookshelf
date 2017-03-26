@@ -8,48 +8,12 @@ $(document).ready(function(){
   });
 });
 
-/////////////////////////
-// Side Reading ////////
-/////////////////////////
-
-// $(function () {
-//   var source = $("#side-bar-books").html();
-//   var template = Handlebars.compile(source);
-//
-//   var context = {
-//     books: [{
-//       title: 'Harry Potter',
-//       author: 'Rowling, JK',
-//       cover: 'harry-potter',
-//       rating: '4.74',
-//       stars: 'star5',
-//     },{
-//       title: 'When Christ and His Saints Slept',
-//       author: 'Steinback, John',
-//       cover: 'christ-saints-slept',
-//       rating: '4.24',
-//       stars: 'star5',
-//     },{
-//       title: 'The Sparrow',
-//       author: 'Russell, Mary',
-//       cover: 'sparrow',
-//       rating: '3.92',
-//       stars: 'star4',
-//     },{
-//       title: 'When Christ and His Saints Slept',
-//       author: 'Penman, Sharon',
-//       cover: 'christ-saints-slept',
-//       rating: '4.27',
-//       stars: 'star5',
-//     }]
-//   };
-//   var compiled = template(context);
-//   $('.side-reading').append(compiled);
-// });
 
 /////////////////////////
 // Main Reading Read////
 /////////////////////////
+
+// All Read
 
 $(function () {
   var source = $("#book-example").html();
@@ -108,4 +72,73 @@ $(function () {
   };
   var compiled = template(context);
   $('.books').append(compiled);
+});
+
+// Currently reading
+
+$(function () {
+  var source = $("#currently-reading").html();
+  var template = Handlebars.compile(source);
+
+  var context = {
+    books: [{
+      title: 'Harry Potter',
+      author: 'Rowling, JK',
+      cover: 'casual-vacancy',
+      rating: '4.74',
+      stars: 'star5',
+    },{
+      title: 'The Cuckoos Calling',
+      author: 'Galbraith, Robert',
+      cover: 'career-of-evil',
+      rating: '3.83',
+      stars: 'star3',
+    }]
+  };
+  var compiled = template(context);
+  $('.current-books').append(compiled);
+});
+
+// To Read
+
+$(function () {
+  var source = $("#to-read").html();
+  var template = Handlebars.compile(source);
+
+  var context = {
+    books: [{
+      title: 'Harry Potter',
+      author: 'Rowling, JK',
+      cover: 'lightening-thief',
+      rating: '4.74',
+      stars: 'star5',
+    },{
+      title: 'The Cuckoos Calling',
+      author: 'Galbraith, Robert',
+      cover: 'angles-demons',
+      rating: '3.83',
+      stars: 'star3',
+    }]
+  };
+  var compiled = template(context);
+  $('.to-read-books').append(compiled);
+});
+
+// Add All Read show Currently Reading
+
+$(document).ready(function(){
+  $('.currently').click(function(){
+    $('.books').hide();
+    $('.to-read-books').hide();
+    $('.current-books').show();
+  });
+  $('.read').click(function(){
+    $('.current-books').hide();
+    $('.to-read-books').hide();
+    $('.books').show();
+  });
+  $('.to-read').click(function(){
+    $('.current-books, .books').hide();
+    $('.to-read-books').show();
+  })
 });

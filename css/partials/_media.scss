@@ -13,9 +13,11 @@
   .main-reading {
     width:64%;
 
-    .books article {
-      width: 40%;
-      margin-right: 8%;
+    .books, .current-books, .to-read-books {
+      article {
+        width: 40%;
+        margin-right: 8%;
+      }
     }
   }
 
@@ -55,9 +57,11 @@
   .main-reading {
     width:100%;
 
-    .books article {
-      width: 27%;
-      margin-right: 6%;
+      .books, .current-books, .to-read-books {
+        article {
+        width: 27%;
+        margin-right: 6%;
+      }
     }
   }
 }
@@ -67,12 +71,14 @@
     display:none;
   }
   .reading-content {
-    margin:50px auto;
+    margin:50px auto 40px;
   }
   .main-reading {
-    .books article {
-      width: 35%;
-      margin: 2% 6%;
+     .books, .current-books, .to-read-books {
+        article {
+        width: 35%;
+        margin: 2% 6%;
+      }
     }
   }
   .main-reading-nav{
@@ -83,9 +89,11 @@
 @media screen and (max-width: 500px) {
 
   .main-reading {
-    .books article {
+    .books, .current-books, .to-read-books {
+      article {
       width: 40%;
-      margin: 3%;
+      margin: 2% 4%;
+      }
     }
   }
 }

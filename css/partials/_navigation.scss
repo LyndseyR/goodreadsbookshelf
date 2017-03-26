@@ -6,7 +6,7 @@
 
 // Mobile
 .mobile-nav {
-  padding:10px 25px;
+  padding:10px 0;
   height:30px;
   background: $secondary;
   display: flex;
@@ -42,7 +42,7 @@
   li {
     a {
       color:$accent;
-      padding:10px 10px 10px 50px;
+      padding:10px 10px 10px 30px;
       background-color:rgba(73, 40, 47,.9);
       display: inline-block;
       width:300px;

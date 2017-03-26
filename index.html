@@ -63,7 +63,7 @@
           </li>
         </ul>
 
-        <ul class="desktop-nav-right">
+        <ul>
           <input type="text" id="search" placeholder="Search"></input>
           <img src="images/lyndsey.jpg" alt="Your Account" class="account">
         </ul>
@@ -128,9 +128,10 @@
 
       <div class="main-reading">
         <div class="main-reading-nav">
-          <h3 class="read">All Read</h3><h3>Currently Reading</h3><h3>To Read</h3>
+          <h3 class="read">All Read</h3><h3 class="currently">Currently Reading</h3><h3 class="to-read">To Read</h3>
         </div>
-        <section class="books clearfix">
+        <section class="books">
+          <!-- All Read Section -->
           <script id="book-example" type="text/x-handlebars-template">
             {{#each books}}
               <article>
@@ -141,7 +142,35 @@
               </article>
             {{/each}}
           </script>
+         </section>
+
+        <!-- Currently Reading Section -->
+        <section class="current-books">
+          <script id="currently-reading" type="text/x-handlebars-template">
+            {{#each books}}
+              <article>
+                <img src="images/{{cover}}.jpg" alt="{{title}}">
+                <h4>By: {{author}}</h4>
+                <h5>Avg Rating: {{rating}}</h5>
+                <img class="stars" src="images/{{stars}}.png">
+              </article>
+            {{/each}}
+          </script>
         </section>
+
+        <!-- To Read Section-->
+      <section class="to-read-books">
+        <script id="to-read" type="text/x-handlebars-template">
+          {{#each books}}
+            <article>
+              <img src="images/{{cover}}.jpg" alt="{{title}}">
+              <h4>By: {{author}}</h4>
+              <h5>Avg Rating: {{rating}}</h5>
+              <img class="stars" src="images/{{stars}}.png">
+            </article>
+          {{/each}}
+        </script>
+      </section>
 
         </div>
     </section>
