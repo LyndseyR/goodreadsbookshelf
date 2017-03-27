@@ -63,11 +63,59 @@ $(function () {
       rating: '4.24',
       stars: 'star5',
     },{
+      title: 'Falls Shadow',
+      author: 'Penman, Sharon',
+      cover: 'falls-shadow',
+      rating: '4.38',
+      stars: 'star4',
+    },{
+      title: 'The Reckoning',
+      author: 'Penman, Sharon',
+      cover: 'the-reckoning',
+      rating: '4.48',
+      stars: 'star5',
+    },{
+      title: 'This is a Book',
+      author: 'Martin, Demetri',
+      cover: 'this-is-a-book',
+      rating: '3.76',
+      stars: 'star3',
+    },{
+      title: 'Game of Thrones',
+      author: 'Martin, George',
+      cover: 'game-thrones1',
+      rating: '4.44',
+      stars: 'star4',
+    },{
+      title: 'Ella Enchanted',
+      author: 'Levine, Gail',
+      cover: 'ella-enchanted',
+      rating: '3.96',
+      stars: 'star5',
+    },{
+      title: 'Animal Farm',
+      author: 'Orwell, George',
+      cover: 'animal-farm',
+      rating: '3.86',
+      stars: 'star3',
+    },{
       title: 'The Cuckoos Calling',
       author: 'Galbraith, Robert',
       cover: 'cuckoos-calling',
       rating: '3.83',
       stars: 'star3',
+    },{
+      title: 'The Silkworm',
+      author: 'Galbraith, Robert',
+      cover: 'silkworm',
+      rating: '4.03',
+      stars: 'star3',
+    },{
+      title: 'Career of Evil',
+      author: 'Galbraith, Robert',
+      cover: 'career-of-evil',
+      rating: '4.21',
+      stars: 'star4',
     }]
   };
   var compiled = template(context);

@@ -1,9 +1,6 @@
 // Navigation///////////////
 ////////////////////////////
 
-// Desktop
-
-
 // Mobile
 .mobile-nav {
   padding:10px 0;
@@ -110,6 +107,7 @@
   }
 }
 
+
 .account {
   height:50px;
   width:50px;
@@ -119,6 +117,7 @@
 }
 
 .desktop-header input {
+  font-size: 1.05rem;
   padding: 5px;
   outline-color: $accent;
 }
