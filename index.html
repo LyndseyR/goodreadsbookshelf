@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
     <script src="https://use.fontawesome.com/f2bdd0ae67.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.4.0/balloon.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon -->
@@ -141,7 +142,7 @@
           <!-- All Read Section -->
           <script id="read" type="text/x-handlebars-template">
             {{#each books}}
-              <article>
+              <article data-balloon-length="fit" data-balloon= "{{summary}}" data-balloon-pos="down">
                 <img src="images/{{cover}}.jpg" alt="{{title}}">
                 <h4>By: {{author}}</h4>
                 <h5>Avg Rating: {{rating}}</h5>
