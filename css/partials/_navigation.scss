@@ -28,7 +28,8 @@
 .search-window{
   display: none;
   // background-color:rgba(73, 40, 47,.98);
-  background: rgba(20, 20, 20, .9);
+  // background: rgba(20, 20, 20, .9);
+  background: rgba(211, 224, 205, 0.9);
   height: 100vh;
   width:100vw;
   position:absolute;
@@ -37,7 +38,7 @@
   padding-top: 50px;
   text-align:center;
 
-  li {
+  input {
     background-color: $accent;
     color: #333;
     padding: 10px 20px;

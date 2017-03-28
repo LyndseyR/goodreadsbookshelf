@@ -33,7 +33,8 @@
           </ul>
           <img src="images/goodreads-logo.gif" alt="GoodReads Logo">
           <img src = "images/search-icon.gif" id="search-icon" alt="Search">
-          <ul class="search-window"><li>Search</li>
+          <ul class="search-window"><input type='text' placeholder='Search'></ul>
+
       </div>
 
 
@@ -156,10 +157,11 @@
         <section class="current-books">
           <script id="currently-reading" type="text/x-handlebars-template">
             {{#each books}}
-              <article>
+              <article data-balloon-length="fit" data-balloon= "{{summary}}" data-balloon-pos="down">
                 <img src="images/{{cover}}.jpg" alt="{{title}}">
                 <h4>By: {{author}}</h4>
                 <h5>Avg Rating: {{rating}}</h5>
+                <h6>Rate this book</h6>
                 <img class="stars" src="images/{{stars}}.png">
               </article>
             {{/each}}
@@ -170,10 +172,11 @@
       <section class="to-read-books">
         <script id="to-read" type="text/x-handlebars-template">
           {{#each books}}
-            <article>
+            <article data-balloon-length="fit" data-balloon= "{{summary}}" data-balloon-pos="down">
               <img src="images/{{cover}}.jpg" alt="{{title}}">
               <h4>By: {{author}}</h4>
               <h5>Avg Rating: {{rating}}</h5>
+              <h6>Rate this book</h6>
               <img class="stars" src="images/{{stars}}.png">
             </article>
           {{/each}}
