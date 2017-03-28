@@ -138,6 +138,7 @@ button {
     font-weight: 800;
     border-bottom: 3px solid transparent;
     background: transparent;
+    margin-bottom: 5px;
   }
   button:hover, button:focus {
     border-bottom: 3px solid $primary;

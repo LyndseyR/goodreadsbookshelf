@@ -75,6 +75,9 @@
     width:100%;
 
       .books, .current-books, .to-read-books {
+        height: 0;
+        overflow: visible;
+        
         article {
         width: 26%;
         margin-right: 6%;

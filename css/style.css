@@ -209,7 +209,8 @@ button {
   color: #49282f;
   font-weight: 800;
   border-bottom: 3px solid transparent;
-  background: transparent; }
+  background: transparent;
+  margin-bottom: 5px; }
 .main-reading-nav button:hover, .main-reading-nav button:focus {
   border-bottom: 3px solid #49282f; }
 
@@ -314,9 +315,12 @@ footer {
 
   .main-reading {
     width: 100%; }
-    .main-reading .books article, .main-reading .current-books article, .main-reading .to-read-books article {
-      width: 26%;
-      margin-right: 6%; } }
+    .main-reading .books, .main-reading .current-books, .main-reading .to-read-books {
+      height: 0;
+      overflow: visible; }
+      .main-reading .books article, .main-reading .current-books article, .main-reading .to-read-books article {
+        width: 26%;
+        margin-right: 6%; } }
 @media (max-width: 668px) {
   footer {
     display: none; }
