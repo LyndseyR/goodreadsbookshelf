@@ -8,6 +8,15 @@ $(document).ready(function(){
   });
 });
 
+////////////////////////////
+// Search Icon Toggle Div /
+//////////////////////////
+
+$(document).ready(function(){
+  $('#search-icon').click(function(){
+    $('.search-window').slideToggle('slow');
+  });
+});
 
 /////////////////////////
 // Main Reading Read////

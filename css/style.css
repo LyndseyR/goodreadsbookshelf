@@ -13,7 +13,26 @@
     height: 50px; }
 
 #search-icon {
-  height: 40px; }
+  height: 40px;
+  position: relative; }
+
+.search-window {
+  display: none;
+  background: rgba(20, 20, 20, 0.9);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  padding-top: 50px;
+  text-align: center; }
+  .search-window li {
+    background-color: #f4f1ea;
+    color: #333;
+    padding: 10px 20px;
+    outline: #fff;
+    width: 200px;
+    margin: 0 auto; }
 
 .hamburger {
   position: relative;
