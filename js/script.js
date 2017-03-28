@@ -77,7 +77,7 @@ $(function () {
       cover: 'here-be-dragons',
       rating: '4.24',
       stars: 'star5',
-      summary: "Thirteenth-century Wales is a divided country, at the mercy of England's ruthless. Then Llewelyn, Prince of North Wales, secures an uneasy truce with England by marrying the English king's beloved, illegitimate daughter, Joanna. Reluctant to wed her father's bitter enemy, Joanna slowly grows to love her charismatic and courageous husband who dreams of uniting Wales. But as John's attentions turn again and again to subduing Wales--and Llewelyn--Joanna must decide to which of these powerful men she owes her loyalty and love.",
+      summary: "Thirteenth-century Wales is a divided country, at the mercy of England. Then Llewelyn, Prince of North Wales, secures an uneasy truce with England by marrying the English king's beloved, illegitimate daughter, Joanna. Reluctant to wed her father's bitter enemy, Joanna slowly grows to love her charismatic and courageous husband who dreams of uniting Wales. But as John's attentions turn again and again to subduing Wales--and Llewelyn--Joanna must decide to which of these powerful men she owes her loyalty and love.",
     },{
       title: 'Falls Shadow',
       author: 'Penman, Sharon',

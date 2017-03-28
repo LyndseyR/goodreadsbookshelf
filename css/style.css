@@ -8,7 +8,8 @@
   position: fixed;
   top: 0;
   opacity: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1000; }
   .mobile-nav img {
     height: 50px; }
 
