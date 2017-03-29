@@ -9,7 +9,7 @@
   top: 0;
   opacity: 0;
   width: 100%;
-  z-index: 1000; }
+  z-index: 100; }
   .mobile-nav img {
     height: 50px; }
 
@@ -88,7 +88,8 @@
         transition: all .4s ease-in-out; }
       .desktop-header ul li ul {
         position: absolute;
-        display: none; }
+        display: none;
+        z-index: 100; }
         .desktop-header ul li ul li a {
           width: 161px; }
       .desktop-header ul li:hover ul {
