@@ -1,17 +1,13 @@
 .mobile-nav {
   padding: 10px 0;
-  height: 30px;
+  height: 75px;
   background: #d3e0cd;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  opacity: 0;
-  width: 100%;
-  z-index: 100; }
+  display: none;
+  width: 100%; }
   .mobile-nav img {
     height: 50px; }
+  .mobile-nav img:nth-of-type(1) {
+    height: 75px; }
 
 #search-icon {
   height: 40px;
@@ -24,7 +20,7 @@
   width: 100vw;
   position: absolute;
   right: 0px;
-  top: 50px;
+  top: 75px;
   padding-top: 50px;
   text-align: center; }
   .search-window input {
@@ -33,7 +29,11 @@
     padding: 10px 20px;
     outline: #fff;
     width: 200px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: block; }
+  .search-window #search-submit {
+    width: 85px;
+    margin-top: 15px; }
 
 .hamburger {
   position: relative;
@@ -42,42 +42,52 @@
   color: #49282f;
   outline: 0;
   border-radius: 4px;
-  padding: 3px 6px; }
+  padding: 6px 10px; }
+
+.mobile-nav-li {
+  margin: 0;
+  border: 1px solid red; }
 
 .hamburger-menu {
   display: none;
   position: absolute;
   left: 0px;
-  top: 50px;
+  top: 80px;
   text-align: left; }
-  .hamburger-menu li a {
-    color: #f4f1ea;
-    padding: 10px 10px 10px 30px;
-    background-color: rgba(73, 40, 47, 0.9);
-    display: inline-block;
-    width: 100vw;
-    border-bottom: 1px solid #f4f1ea; }
-  .hamburger-menu li a:focus, .hamburger-menu li .selected {
-    background-color: #49282f; }
+  .hamburger-menu li {
+    margin: 0; }
+    .hamburger-menu li a {
+      color: #f4f1ea;
+      padding: 10px 10px 10px 30px;
+      background-color: rgba(73, 40, 47, 0.9);
+      display: inline-block;
+      width: 100vw;
+      border-bottom: 1px solid #f4f1ea; }
+    .hamburger-menu li a:focus, .hamburger-menu li .selected {
+      background-color: #49282f; }
 
 .desktop-header {
-  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 50px; }
+  .desktop-header img:nth-child(1) {
+    height: 65px; }
   .desktop-header img {
     height: 50px;
-    position: relative;
-    top: 20px;
+    cursor: pointer;
     padding: 0 10px; }
   .desktop-header ul {
+    display: flex;
+    align-items: center;
     padding: 0;
     margin: 0;
     list-stlye: none; }
     .desktop-header ul li {
       display: inline-block;
-      position: relative; }
+      position: relative;
+      right: 0;
+      margin-right: 10px; }
       .desktop-header ul li a {
         display: block;
         background-color: rgba(73, 40, 47, 0.9);
@@ -185,11 +195,14 @@ button {
 .friend-review {
   border-bottom: 1px solid #49282f;
   padding-bottom: 15px;
-  margin: 5% 1%; }
+  margin: 5% 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .friend-review h3 {
     padding: 0 0 5px; }
   .friend-review img {
-    height: 120px;
+    height: 150px;
     width: 100px;
     border: 1px solid #333;
     object-fit: cover; }
@@ -237,6 +250,9 @@ button {
 .main-reading-nav button:hover, .main-reading-nav button:focus {
   border-bottom: 3px solid #49282f; }
 
+.main-reading-nav:hover button {
+  cursor: pointer; }
+
 .current-books, .to-read-books {
   display: none; }
 
@@ -260,10 +276,11 @@ button {
       border: 1px solid #49282f;
       text-align: center;
       float: left;
-      width: 21%; }
+      width: 21%;
+      overflow: hidden; }
       .main-reading .books article img:nth-child(1), .main-reading .current-books article img:nth-child(1), .main-reading .to-read-books article img:nth-child(1) {
         width: 100%;
-        height: 200px;
+        height: 250px;
         object-fit: cover; }
       .main-reading .books article img:hover p, .main-reading .current-books article img:hover p, .main-reading .to-read-books article img:hover p {
         display: block; }
@@ -317,6 +334,9 @@ footer {
     text-align: left;
     margin-left: 2%; } }
 @media (max-width: 840px) {
+  .desktop-header ul li {
+    margin-right: 5px; }
+
   .side-reading {
     width: 35%; }
 
@@ -327,7 +347,12 @@ footer {
       margin-right: 2%; } }
 @media (max-width: 767px) {
   .mobile-nav {
-    opacity: 100; }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100; }
 
   .desktop-header {
     display: none; }

@@ -4,19 +4,16 @@
 // Mobile
 .mobile-nav {
   padding:10px 0;
-  height:30px;
+  height:75px;
   background: $secondary;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  opacity: 0;//-->REMOVE in Media Queries
+  display: none;
   width: 100%;
-  z-index: 100;
 
   img {
     height:50px;
+  }
+  img:nth-of-type(1) {
+    height: 75px;
   }
 }
 
@@ -27,14 +24,12 @@
 
 .search-window{
   display: none;
-  // background-color:rgba(73, 40, 47,.98);
-  // background: rgba(20, 20, 20, .9);
   background: rgba(211, 224, 205, 0.9);
   height: 100vh;
   width:100vw;
   position:absolute;
   right:0px;
-  top:50px;
+  top:75px;
   padding-top: 50px;
   text-align:center;
 
@@ -45,26 +40,37 @@
     outline:#fff;
     width: 200px;
     margin: 0 auto;
+    display: block;
+  }
+  #search-submit {
+    width: 85px;
+    margin-top: 15px;
   }
 }
 
- .hamburger {
+.hamburger {
     position: relative;
     border:none;
     background-color:$accent;
     color:$primary;
     outline:0;
     border-radius: 4px;
-    padding: 3px 6px;
+    padding: 6px 10px;
+ }
+
+ .mobile-nav-li {
+   margin:0;
+   border:1px solid red;
  }
 
  .hamburger-menu {
   display: none;
   position:absolute;
   left:0px;
-  top:50px;
+  top:80px;
   text-align:left;
   li {
+    margin:0;
     a {
       color:$accent;
       padding:10px 10px 10px 30px;
@@ -84,20 +90,26 @@
 ////////////////////////////
 
 .desktop-header {
-  height:50px;
+  // height:75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin:10px 50px;
 
+// Logo Image
+  img:nth-child(1){
+    height: 65px;
+  }
+
   img {
     height:50px;
-    position: relative;
-    top:20px;
+    cursor: pointer;
     padding:0 10px;
   }
 
   ul {
+    display: flex;
+    align-items: center;
     padding: 0;
     margin: 0;
     list-stlye: none;
@@ -105,6 +117,8 @@
     li{
       display: inline-block;
       position: relative;
+      right: 0;
+      margin-right: 10px;
       // width: 150px;
 
       a {

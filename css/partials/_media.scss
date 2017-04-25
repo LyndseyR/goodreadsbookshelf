@@ -37,6 +37,13 @@
 }
 
 @media (max-width: 840px) {
+  .desktop-header {
+    ul {
+      li {
+        margin-right: 5px;
+      }
+    }
+  }
   .side-reading {
     width:35%;
   }
@@ -56,7 +63,12 @@
 @media (max-width: 767px) {
 
   .mobile-nav {
-    opacity: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
   }
 
   .desktop-header {
@@ -77,7 +89,7 @@
       .books, .current-books, .to-read-books {
         height: 0;
         overflow: visible;
-        
+
         article {
         width: 26%;
         margin-right: 6%;

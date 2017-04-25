@@ -40,7 +40,7 @@ h5 {
   font-size:.8rem;
   font-weight:300;
 }
-h6{
+h6 {
   font-size: .6rem;
   padding-top: 10px;
   font-weight: 600;
@@ -83,11 +83,15 @@ button {
   border-bottom: 1px solid $primary;
   padding-bottom: 15px;
   margin: 5% 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   h3 {
     padding: 0 0 5px;
   }
   img {
-    height: 120px;
+    height: 150px;
     width:100px;
     border:1px solid #333;
     object-fit: cover;
@@ -151,6 +155,11 @@ button {
     border-bottom: 3px solid $primary;
   }
 }
+.main-reading-nav:hover {
+  button {
+    cursor: pointer;
+  }
+}
 
 .current-books, .to-read-books {
   display:none;
@@ -181,10 +190,11 @@ button {
         text-align: center;
         float: left;
         width: 21%;
+        overflow: hidden;
 
       img:nth-child(1) {
         width: 100%;
-        height:200px;
+        height:250px;
         object-fit: cover;
       }
       img:hover {
@@ -198,6 +208,8 @@ button {
     }
   }
 }
+
+
 
 
 //////////////////////////////////////
