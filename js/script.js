@@ -12,11 +12,11 @@ $(document).ready(function(){
 // Search Icon Toggle Div /
 //////////////////////////
 
-// $(document).ready(function(){    code works
-//   $('#search-icon, #search-submit, .search-window').click(function(){
-//     $('.search-window').slideToggle('slow');
-//   });
-// });
+$(document).ready(function(){
+  $('#search-icon, #search-submit').click(function(){
+    $('.search-window').slideToggle('slow');
+  });
+});
 
 // $(document).ready(function () { doesn't work
 //     $('#search-icon').click(function (e) {
@@ -29,19 +29,22 @@ $(document).ready(function(){
 //     });
 // });
 
-$(document).ready(function (){
-  $('#search-icon').click(function(e){
-    e.stopPropagation();
-      $('.search-window').slideToggle();
-  });
-  $('.search-window').click(function(e){
-    e.stopPropagation();
-  });
-  $(document).click(function(){
-    $('.search-window').slideUp();
-  });
 
-});
+
+
+// $(document).ready(function (){ not working
+//   $('#search-icon').click(function(e){
+//     e.stopPropagation();
+//       $('.search-window').slideToggle();
+//   });
+//   $('.search-window').click(function(e){
+//     e.stopPropagation();
+//   });
+//   $(document).click(function(){
+//     $('.search-window').slideUp();
+//   });
+//
+// });
 
 /////////////////////////
 // Main Reading Read////
