@@ -10,7 +10,7 @@
     height: 75px; }
 
 #search-icon {
-  height: 60px;
+  height: 65px;
   position: relative; }
 
 .search-window {
@@ -376,7 +376,7 @@ footer {
     display: none; }
 
   .reading-content {
-    margin: 75px auto 40px; }
+    margin: 85px auto 40px; }
 
   .main-reading .main-reading-nav {
     text-align: center; }
